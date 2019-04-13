@@ -10,10 +10,12 @@ import React, { Component } from 'react';
 import {
   StyleSheet,
   Text,
+  View,
   TextInput,
   Image,
   Button,
-  TouchableHighlight
+  TouchableHighlight,
+  StatusBar
 } from 'react-native';
 import TabsExample from './components/Tabs'
 import { Container, Header, Content, Body, CheckBox, Footer, Card } from 'native-base';
@@ -48,28 +50,26 @@ export default class App extends Component {
           </Header>
         </Card>
 
-        <Content contentContainerStyle={{ flexGrow: 1 }} >
+        <Content >
           <Card noShadow={true}
             style={{ paddingVertical: 10 }} >
-            <Text>Product</Text>
             <Body style={{ width: '100%', flexDirection: 'row', justifyContent: 'space-evenly' }} >
               <Image style={{
-                width: 70,
+                width: 100,
                 height: 50
               }}
-                source={require('../checkout/assets/itemImage.jpg')}
+                source={{ uri: "https://nssdata.s3.amazonaws.com/images/galleries/13931/HO16-BB-KobeA-D-FTW-E-hd-1600.jpg" }}
               />
-              <Body>
-                <Text>NIKE RUNNING SHOES</Text>
-                <Text>SUB TOTAL</Text>
-                <Text>$1402.30</Text>
-              </Body>
+              <View style={{ alignItems: 'center' }}>
+                <Text style={{ marginBottom: 10, color: 'black' }}>NIKE RUNNING SHOES</Text>
+                <Text style={{ color: 'black' }}>SUB TOTAL</Text>
+                <Text style={{ color: '#00db83', fontWeight: '500' }} >$1402.30</Text>
+              </View>
             </Body>
           </Card>
-
+          <Text style={{ paddingVertical: 10 }} >YOUR SAVED CARDS</Text>
           <Card noShadow={true}
             style={{ paddingVertical: 10 }} >
-            <Text>YOUR SAVED CARDS</Text>
             <Body style={{ width: '100%', flexDirection: 'row', justifyContent: 'space-evenly' }} >
               <CheckBox style={{ borderRadius: 50 }}
                 color='blue'
@@ -89,14 +89,17 @@ export default class App extends Component {
           </Card>
           {
             this.state.hideTab ? null :
-              <Card noShadow={true} style={{ paddingVertical: 10 }} >
-                <Text>Other payment methods</Text>
-                <TabsExample />
-              </Card>
+              <View>
+                <Text style={{ paddingVertical: 10 }} >OTHER PAYMENT METHODS</Text>
+                <Card noShadow={true}  >
+                  <TabsExample />
+                </Card>
+              </View>
+
           }
         </Content>
         {
-          this.state.hideTab ? <Footer style={{ backgroundColor: null, marginBottom: '5%' }} ><TouchableHighlight><Button title='Pay Now' ></Button></TouchableHighlight></Footer> :
+          this.state.hideTab ? <Footer style={{ backgroundColor: null, marginBottom: '5%' }} ><TouchableHighlight><Button title='Pay Now' color='#00db83' ></Button></TouchableHighlight></Footer> :
             null
         }
       </Container >

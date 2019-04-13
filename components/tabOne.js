@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {
     StyleSheet,
     Text,
-    View,
+    TouchableHighlight,
     TextInput,
     Button,
     Dimensions
@@ -23,7 +23,7 @@ export default class AddCardTab extends React.PureComponent {
                         <TextInput placeholder='EXPIRY YEAR' ></TextInput>
                         <TextInput placeholder='CVV NO.' ></TextInput>
                     </Body>
-                    <Button title='Pay Now' ></Button>
+                    <TouchableHighlight style={{ marginTop: '8%', alignItems: 'center' }}><Button title='Save and Pay Now' color='#00db83' ></Button></TouchableHighlight>
                 </Content>
             </Container>
         );

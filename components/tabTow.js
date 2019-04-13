@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import {
     StyleSheet,
     Text,
-    Button
+    Button,
+    TouchableHighlight
 } from 'react-native';
 import { Container, Content, Picker } from 'native-base';
 
@@ -23,7 +24,7 @@ export default class AddCardNetBanking extends React.PureComponent {
         return (
             <Container>
                 <Content>
-                    <Text>Select Bank</Text>
+                    <Text style={{ paddingVertical: 10 }} >Select Bank</Text>
                     <Picker selectedValue={this.state.selectedBank}
                         onValueChange={(itemValue, itemIndex) => this.onValueChanged(itemValue)} >
                         <Picker.Item label="Punjab National Bank Retail" value="pnbRetail" />
@@ -33,7 +34,7 @@ export default class AddCardNetBanking extends React.PureComponent {
                         <Picker.Item label="ICICI Bank" value="icici" />
                         <Picker.Item label="Bank of Baroda" value="baroda" />
                     </Picker>
-                    <Button title='Pay Now' ></Button>
+                    <TouchableHighlight style={{ marginTop: '8%', alignItems: 'center' }}><Button title='Pay Now' color='#00db83' ></Button></TouchableHighlight>
                 </Content>
             </Container>
         );
