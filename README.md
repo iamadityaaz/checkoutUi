@@ -6,8 +6,9 @@ The source code here is Open Source feel free to contribute 🤝 🎉
 ## Getting Started
 
 You need to install
-*npm
-*React-Native
+
+- npm
+- React-Native
 
 ---
 
@@ -22,4 +23,4 @@ or `react-native run-windows` (Windows only)
 
 ## Authors
 
-\***_Aditya Prakash_**
+- **_Aditya Prakash_**
