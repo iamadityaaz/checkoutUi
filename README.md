@@ -27,3 +27,6 @@ or `react-native run-windows` (Windows only)
 ## Authors
 
 - **_Aditya Prakash_**
+
+## Licence
+[READ HERE](https://github.com/iamadityaaz/checkoutUi/blob/master/LICENSE.md)
