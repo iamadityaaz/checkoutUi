@@ -2,6 +2,8 @@
 
 This is a checkout screen UI made in React-Native for both ios and Android. The design here made is from [Dribble-by-Padam Boora](https://dribbble.com/shots/2472389-Checkout-Day-15).
 The source code here is Open Source feel free to contribute 🤝 🎉
+<img src="https://github.com/iamadityaaz/checkoutUi/blob/master/screenshots/ss1.png" height="600" width="300" hspace="40"><img src="https://github.com/iamadityaaz/checkoutUi/blob/master/screenshots/ss2.png" height="600" width="300" hspace="40">
+<img src="https://github.com/iamadityaaz/checkoutUi/blob/master/screenshots/ss3.png" height="600" width="300" hspace="40">
 ![Alt text](/screenshots/ss1.png?raw=true "Optional Title")
 ![Alt text](/screenshots/ss2.png?raw=true "Optional Title")
 ![Alt text](/screenshots/ss3.png?raw=true "Optional Title")
