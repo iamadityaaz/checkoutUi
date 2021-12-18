@@ -45,5 +45,6 @@ const styles = StyleSheet.create({
     container: {
         alignItems: 'center',
         backgroundColor: '#F5FCFF',
+        color:"#000"
     }
 });
